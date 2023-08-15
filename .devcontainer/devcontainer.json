@@ -9,8 +9,8 @@
 			"installTFsec": true,
 			"installTerraformDocs": true,
 			"version": "latest",
-			"tflint": "0.46.1",
-			"terragrunt": "latest"
+			"tflint": "latest",
+			"terragrunt": "0.48.0"
 		}
 	}
 
