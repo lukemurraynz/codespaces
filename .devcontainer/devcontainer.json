@@ -1,33 +1,26 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "Ubuntu",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"build": {
-		// Path is relataive to the devcontainer.json file.
-		"dockerfile": "Dockerfile"
-	},
-	"features": {
-		"ghcr.io/devcontainers/features/terraform:latest": {
-			"installTFsec": true,
-			"installTerraformDocs": true,
-			"version": "latest",
-			"tflint": "latest",
-			"terragrunt": "0.48.0"
-		}
-	},
-	"customizations": {
-		"vscode": {
-			"settings": {
-				"editor.formatOnSave": true
-			},
-			"extensions": [
-				"eamodio.gitlens"
-			]
-		}
-	}
-	"forwardPorts": ["80],
-		"postStartCommand": "httpd"
+  "name": "Ubuntu",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/terraform:latest": {
+      "installTFsec": true,
+      "installTerraformDocs": true,
+      "version": "latest",
+      "tflint": "latest",
+      "terragrunt": "0.48.0"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true
+      },
+      "extensions": ["eamodio.gitlens"]
+    }
+  },
+  "forwardPorts": ["80"],
 
-	
+  "postStartCommand": "httpd"
 }
