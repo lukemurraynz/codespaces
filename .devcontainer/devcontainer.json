@@ -22,5 +22,5 @@
   },
   "forwardPorts": ["80"],
 
-  "postStartCommand": "httpd"
+  "postCreateCommand": "httpd"
 }
