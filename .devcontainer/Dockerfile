@@ -1,8 +1,3 @@
-FROM mcr.microsoft.com/devcontainers/base:jammy
-ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get -y update
-RUN apt install –y apache2 
-RUN apt install –y apache2-utils 
-RUN apt clean 
+FROM httpd:2.4
 EXPOSE 80
 CMD [“apache2ctl”, “-D”, “FOREGROUND”]
